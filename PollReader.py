@@ -103,7 +103,7 @@ class PollReader():
         count = 0
 
         for i in range(len(self.data_dict['sample type'])):
-            if self.data_dict['sample type'][i] != 'LV':
+            if self.data_dict['sample type'][i] == 'LV':
                 harris_sum += self.data_dict['Harris result'][i]
                 trump_sum += self.data_dict['Trump result'][i]
                 count += 1
